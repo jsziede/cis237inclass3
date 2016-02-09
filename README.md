@@ -1,4 +1,4 @@
-# CIS237 InClass 1 Program
+# CIS237 InClass 3 Program
 
 ## Author
 David Barnes
