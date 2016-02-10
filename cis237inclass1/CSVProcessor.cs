@@ -71,7 +71,7 @@ namespace cis237inclass3
             //we parsed out. If you had a collection class, I would hope that it has
             //a method that you made called 'add' that would then do the work of
             //adding a new employee to the collection.
-            employees[index] = new Employee(firstName, lastName, salary);
+            employees[index] = new Employee(firstName, lastName);
         }
     }
 }
