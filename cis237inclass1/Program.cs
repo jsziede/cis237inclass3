@@ -15,6 +15,7 @@ namespace cis237inclass3
             Employee employee2 = new Employee("Joe", "Somebody");
 
             SalaryEmployee salaryEmployee = new SalaryEmployee("Joshua", "Sziede", 1234.56m);
+            HourlyEmployee hourlyEmployee = new HourlyEmployee("Soshua", "Jziede", 6543.21m);
 
             //Creat simple int that will be used for value vs reference
             int myNumber = 5;
@@ -64,6 +65,7 @@ namespace cis237inclass3
 
             Console.WriteLine();
             Console.WriteLine(salaryEmployee.ToString());
+            Console.WriteLine(hourlyEmployee.ToString());
             Console.WriteLine();
 
             //We are creating a new UserInterface class, and it's okay
