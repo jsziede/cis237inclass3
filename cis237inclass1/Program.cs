@@ -14,6 +14,8 @@ namespace cis237inclass3
             Employee employee1 = new Employee("Dave", "Barnes");
             Employee employee2 = new Employee("Joe", "Somebody");
 
+            SalaryEmployee salaryEmployee = new SalaryEmployee("Joshua", "Sziede", 1234.56m);
+
             //Creat simple int that will be used for value vs reference
             int myNumber = 5;
 
@@ -59,6 +61,10 @@ namespace cis237inclass3
                     Console.WriteLine(employee.ToString());
                 }
             }
+
+            Console.WriteLine();
+            Console.WriteLine(salaryEmployee.ToString());
+            Console.WriteLine();
 
             //We are creating a new UserInterface class, and it's okay
             //that the UserInterface class does not have a defined
