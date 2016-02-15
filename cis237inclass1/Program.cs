@@ -34,14 +34,20 @@ namespace cis237inclass3
             //Console.WriteLine(employee.ToString());
 
             //Showing how to use an array with objects
+            //Parent class Employee can use child classes HourlyEmployee and SalaryEmployee
             Employee[] employees = new Employee[10];
 
             //Instanciate some employees into the array
+//<<<<<<< HEAD
             employees[0] = new SalaryEmployee("James", "Kirk", 123.45m);
             employees[1] = new Employee("Jean-Luc", "Picard");
-            employees[2] = new Employee("Benjamin", "Sisko");
-            employees[3] = new Employee("Kathryn", "Janeway");
-            employees[4] = new Employee("Johnathan", "Archer");
+//=======
+            employees[2] = new HourlyEmployee("James", "Kirk", 12.05m);
+            employees[3] = new SalaryEmployee("Jean-Luc", "Picard", 55123.00m);
+//>>>>>>> addPolymorphism
+            employees[4] = new Employee("Benjamin", "Sisko");
+            employees[5] = new Employee("Kathryn", "Janeway");
+            employees[6] = new Employee("Johnathan", "Archer");
 
             //Lets use the new CSVProcessor we made!
             CSVProcessor csvProcesor = new CSVProcessor();
