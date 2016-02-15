@@ -37,7 +37,7 @@ namespace cis237inclass3
             Employee[] employees = new Employee[10];
 
             //Instanciate some employees into the array
-            employees[0] = new Employee("James", "Kirk");
+            employees[0] = new SalaryEmployee("James", "Kirk", 123.45m);
             employees[1] = new Employee("Jean-Luc", "Picard");
             employees[2] = new Employee("Benjamin", "Sisko");
             employees[3] = new Employee("Kathryn", "Janeway");
