@@ -49,13 +49,6 @@ namespace cis237inclass3
             employees[5] = new Employee("Kathryn", "Janeway");
             employees[6] = new Employee("Johnathan", "Archer");
 
-            //Lets use the new CSVProcessor we made!
-            CSVProcessor csvProcesor = new CSVProcessor();
-
-            //Call the ImportCSV method passing the path, and the employees array
-            //over so they can be used.
-            csvProcesor.ImportCSV("../data/employees.csv", employees);
-
             //A for each loop that will loop through each element of the employees array
             foreach (Employee employee in employees)
             {
