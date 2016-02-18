@@ -10,63 +10,20 @@ namespace cis237inclass3
     {
         static void Main(string[] args)
         {
-            //Create a couple of instances of the Employee class
-            Employee employee1 = new Employee("Dave", "Barnes");
-            Employee employee2 = new Employee("Joe", "Somebody");
-
-            SalaryEmployee salaryEmployee = new SalaryEmployee("Joshua", "Sziede", 1234.56m);
-            HourlyEmployee hourlyEmployee = new HourlyEmployee("Soshua", "Jziede", 6543.21m);
-
-            //Creat simple int that will be used for value vs reference
-            int myNumber = 5;
-
-            //Write the value of the int before the method, call the method, print after call.
-            Console.WriteLine(myNumber);
-            changeAnInt(myNumber);
-            Console.WriteLine(myNumber);
-
-            //Write the value of the employee before the method, call the method, print after call.
-            Console.WriteLine(employee1.ToString());
-            changeAnObject(employee1);
-            Console.WriteLine(employee1.ToString());
-            
-            //Console.WriteLine(employee.GetFullName());
-            //Console.WriteLine(employee.ToString());
 
             //Showing how to use an array with objects
             //Parent class Employee can use child classes HourlyEmployee and SalaryEmployee
-            Employee[] employees = new Employee[10];
+            IEmployee[] employees = new Employee[10];
 
             //Instanciate some employees into the array
-//<<<<<<< HEAD
-            employees[0] = new SalaryEmployee("James", "Kirk", 123.45m);
-            employees[1] = new Employee("Jean-Luc", "Picard");
-//=======
-            employees[2] = new HourlyEmployee("James", "Kirk", 12.05m);
-            employees[3] = new SalaryEmployee("Jean-Luc", "Picard", 55123.00m);
-//>>>>>>> addPolymorphism
-            employees[4] = new Employee("Benjamin", "Sisko");
-            employees[5] = new Employee("Kathryn", "Janeway");
-            employees[6] = new Employee("Johnathan", "Archer");
-
-            //A for each loop that will loop through each element of the employees array
-            foreach (Employee employee in employees)
-            {
-                //Check to make sure that the current object is not null.
-                //we know that the first 5 have values because we assigned them right above
-                //but the last 5 are null, so we better put in a check.
-                if (employee != null)
-                {
-                    //output the information of the employee
-                    Console.WriteLine(employee.ToString());
-                }
-            }
-
-            Console.WriteLine();
-            Console.WriteLine(salaryEmployee.ToString());
-            Console.WriteLine(hourlyEmployee.ToString());
-            Console.WriteLine();
-
+            employees[0] = new SalaryEmployee("James", "Kirk", 12345m);
+            employees[1] = new HourlyEmployee("Jean-Luc", "Picard", 12.25m);
+            employees[2] = new HourlyEmployee("ayy", "lmao", 123.05m);
+            employees[3] = new SalaryEmployee("y", "ee", 55123.00m);
+            employees[4] = new HourlyEmployee("Benjamin", "Sisko", 42.13m);
+            employees[5] = new SalaryEmployee("Kathryn", "Janeway", 14567m);
+            employees[6] = new HourlyEmployee("Johnathan", "Archer", 21.12m);
+             
             //We are creating a new UserInterface class, and it's okay
             //that the UserInterface class does not have a defined
             //constructor. It will have a default one provide to us that

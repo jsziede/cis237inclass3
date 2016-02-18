@@ -46,5 +46,10 @@ namespace cis237inclass3
             //to the parent class
             return base.ToString() + " " + this.Salary.ToString("C");
         }
+
+        public override string GetFormattedSalary()
+        {
+            return this.Salary.ToString("C");
+        }
     }
 }

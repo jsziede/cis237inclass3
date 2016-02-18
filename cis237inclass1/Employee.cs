@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237inclass3
 {
-    class Employee
+    abstract class Employee : IEmployee
     {
         //Backing fields
         protected string firstName;
@@ -28,6 +28,15 @@ namespace cis237inclass3
         public string GetFullName()
         {
             return this.firstName + " " + this.lastName;
+        }
+
+        //abstract method in an abstract class does not have a { body } but all of its children classes must have an override { body } for this method
+        public abstract string GetFormattedSalary();
+
+        //virtual string requires a { body } but the { body } can be empty. virtual methods can be overridden
+        public virtual string GetLastNameFirstName()
+        {
+            return this.lastName + ", " + this.firstName;
         }
 
         //Override method that will print all of the fields
