@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace cis237inclass3
 {
     //can only inherit from one parent class
-    class SalaryEmployee : Employee
+    public class SalaryEmployee : Employee
     {
         private decimal salary;
 

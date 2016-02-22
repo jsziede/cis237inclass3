@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237inclass3
 {
-    class HourlyEmployee : Employee
+    public class HourlyEmployee : Employee
     {
         //constants for the hours per week and year
         private const decimal HOURS_PER_WEEK = 40;
